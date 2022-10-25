@@ -1,14 +1,14 @@
 
 //realizar conversión de monedas
 
-let iniciar = confirm("Bienvenido al convertidor de divisars, si deseaa realizar la conversión haga click en ACEPTAR");
+let iniciar = confirm("Bienvenido al convertidor de divisas, si desea realizar la conversión haga click en ACEPTAR");
 
 if (iniciar == true){
 cambio();
 
 function cambio () {
     let resultado;
-    alert("Este conversor es de pesos argentinos a dolar estadounidenses");
+    alert("Este conversor es de pesos argentinos a dólar estadounidenses");
 
     let pesosAr = parseFloat(prompt("Por favor ingreses cantidad PESOS ARGENTINOS que desea convertir"));
     let dolarUsa =  parseFloat(prompt("Por favor ingreses valor de cotización DOLAR USA que quiere utilizar"));

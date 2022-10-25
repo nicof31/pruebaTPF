@@ -26,7 +26,7 @@ if(inicio !=null){
 switch(inicio.toLowerCase()){
         case "inicio": 
             console.log("Tipeo: " + inicio);
-            document.write('<div class="card_juego"><h2>Incio Pelea</h2><img src="./img/iniciopelea.webp" /></div>');
+            document.write('<div class="card_juego"><h2>Incio Pelea</h2><img src="../imgf/iniciopelea.webp" /></div>');
             
 while (fuerzaDrago > 0 && fuerzaRocky > 0){
     round = round + 1;
@@ -39,11 +39,11 @@ if(golpeDrago === golpeRocky){
     fuerzaRocky -= golpeDrago;
     fuerzaDrago -= golpeRocky;
 }else if(golpeRocky > golpeDrago) {
-    document.write('<div class="card_juego"><h5>Round N° ' + round + ': Fuerza Rocky:  ' + fuerzaRocky + ' vs ' + 'Fuerza Drago: '+ fuerzaDrago + '</h5><img src="./img/pegarocky.webp" /></div>');
+    document.write('<div class="card_juego"><h5>Round N° ' + round + ': Fuerza Rocky:  ' + fuerzaRocky + ' vs ' + 'Fuerza Drago: '+ fuerzaDrago + '</h5><img src="../imgf/pegarocky.webp" /></div>');
     fuerzaDrago -= golpeRocky;
 } else {
     fuerzaRocky -= golpeDrago;
-    document.write('<div class="card_juego"><h5>Round N° ' + round + ': Fuerza Rocky:  ' + fuerzaRocky + ' vs ' + 'Fuerza Drago: '+ fuerzaDrago + '</h5><img src="./img/pegadrago.webp" /></div>');
+    document.write('<div class="card_juego"><h5>Round N° ' + round + ': Fuerza Rocky:  ' + fuerzaRocky + ' vs ' + 'Fuerza Drago: '+ fuerzaDrago + '</h5><img src="../imgf/pegadrago.webp" /></div>');
 }
 
 document.write('<br>');
@@ -62,12 +62,12 @@ if(fuerzaDrago === fuerzaRocky){
     console.log("Empate técnico por error de tipeo incio");
 }else if(fuerzaDrago>0){
     console.log("Gano Drago");
-    document.write('<div class="card_juego"><h5>Gano Drago</h5><img src="./img/ganodrago.webp" /></div>');
-    document.write('<div class="card_juego"><h2>Fin pelea</h2><img src="./img/finpelea.webp" /></div>');
+    document.write('<div class="card_juego"><h5>Gano Drago</h5><img src="../imgf/ganodrago.webp" /></div>');
+    document.write('<div class="card_juego"><h2>Fin pelea</h2><img src="../imgf/finpelea.webp" /></div>');
 }else {
     console.log("Gano Rocky");
-    document.write('<div class="card_juego"><h5>Gano Rocky</h5><img src="./img/ganorocky.webp" /></div>');
-    document.write('<div class="card_juego"><h2>Fin pelea</h2><img src="./img/finpelea.webp" /></div>');
+    document.write('<div class="card_juego"><h5>Gano Rocky</h5><img src="../imgf/ganorocky.webp" /></div>');
+    document.write('<div class="card_juego"><h2>Fin pelea</h2><img src="../imgf/finpelea.webp" /></div>');
 }
 }else {
     alert("Vuelva a recargar la pagina para iniciar nuevamente, verifique de tipear los valores solicitados");
